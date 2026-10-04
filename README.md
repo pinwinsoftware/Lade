@@ -87,18 +87,18 @@ The general structure is:
 
 ----------------------
 Header
-  Signature
-  File count         
+- Signature
+- File count         
 ----------------------
 File Entry #1
-  File name
-  File size
-  File offset
+- File name
+- File size
+- File offset
 ----------------------
 File Entry #2
-  File name
-  File size
-  File offset         
+- File name
+- File size
+- File offset         
 ----------------------
  File data #1         
 ----------------------
@@ -171,8 +171,8 @@ For example:
 1   1
 11111
 ```
-1 = Wall
-2 = Entity
+* 1 = Wall
+* 2 = Entity
 
 You can change the id of the objects inside of their LES files
 
@@ -317,9 +317,9 @@ Lite Engine Sprite format, used to store entities and weapons sprites using asci
 
 Current version of Lite engine reads this 3 symbols:
 
-' ' - Empty space of the sprite, that draws nothing, but can be overdrawn by another object behind the entity.
-'0' - Void that doesn't let any other sprites behind overdraw this area.
-'1' - A solid pixel of the sprite.
+* ' ' - Empty space of the sprite, that draws nothing, but can be overdrawn by another object behind the entity.
+* '0' - Void that doesn't let any other sprites behind overdraw this area.
+* '1' - A solid pixel of the sprite.
 
 LSP files can be created using LSP Editor app.
 
