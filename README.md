@@ -100,8 +100,6 @@ File Entry #2
   File size
   File offset         
 ----------------------
- ...                  
-----------------------
  File data #1         
 ----------------------
  File data #2         
