@@ -126,6 +126,7 @@ Every led file has to contain a file called GAME.LEM, else the game wouldn't wor
 
 The general structure is:
 
+```
 map MAP01
 {
     Level_id = 1;
@@ -151,6 +152,7 @@ map MAP02
     y = 3.5;
     angle = 180;
 }
+```
 
 # = LWD =
 
@@ -162,12 +164,13 @@ The character's value corresponds to the ID of an object defined by an LES file.
 
 For example:
 
+```
 11111
-1     1
-1 2  1
-1     1
+1   1
+1 2 1
+1   1
 11111
-
+```
 1 = Wall
 2 = Entity
 
@@ -185,6 +188,7 @@ Static Walls/Blocks that collide with player and entities. Currently Lite Engine
 
 The general structure is:
 
+```
 geometry Wall
 {
      Id = 1;
@@ -194,6 +198,7 @@ geometry Wall
          WALL.LSP; // Sprite for walls are only used to be displayed as icon in LWD Editor
      }
 }
+```
 
 entity:
 
@@ -214,6 +219,7 @@ If you wish you can add more classes inside of Lite Engine source code, then use
 
 The general structure is:
 
+```
 entity Monster
 {
     Id = 3;
@@ -256,6 +262,7 @@ entity Monster
         FIREBALL.LSP; // Fireball sprite
     }
 }
+```
 
 weapon:
 
@@ -263,6 +270,7 @@ Weapons used by player to attack enemies. The weapons can be melee and ranged. R
 
 The general structure is:
 
+```
 weapon Pistol
 {
     Id = 2; // The weapon ids are used to select them during the game. If weapon id is 1, then it's corresponding key is "number 1" on keyboard
@@ -283,10 +291,12 @@ weapon Pistol
             PISTOL_ATTACK.LSP;
         }
     }
-} 
+}
+```
 
 The different object classes will change the properties of the les file, but overall structure is:
 
+```
 class_name Entity_Name
 {
     <Any properties>
@@ -299,6 +309,7 @@ class_name Entity_Name
         }
     }
 }
+```
 
 # = LSP =
 
